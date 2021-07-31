@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "ts-node node_modules/jasmine/bin/jasmine --config=jasmine.json",
     "build": "webpack",
     "start:dev": "webpack serve"
   },
@@ -12,10 +12,17 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jasmine": "^3.8.2",
+    "jasmine": "^3.8.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "jasmine-ts": "^0.4.0",
+    "jasmine-ts-console-reporter": "^3.1.1",
     "ts-loader": "^9.2.4",
+    "ts-node": "^10.1.0",
     "typescript": "^4.3.5",
     "webpack": "^5.47.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
-  }
+  },
+  "dependencies": {}
 }
