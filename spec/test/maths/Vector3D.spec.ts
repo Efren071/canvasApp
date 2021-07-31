@@ -1,4 +1,4 @@
-import { Vector3D } from '../src/maths/Vector3D';
+import { Vector3D } from '../../../src/maths/Vector3D';
 
 describe('Vector2D', function () {
     let vectorA: Vector3D;
@@ -7,12 +7,6 @@ describe('Vector2D', function () {
     beforeAll(function () {
         vectorA = new Vector3D(1,2, 3);
         vectorB = new Vector3D(4, 5, 6);
-    });
-
-    it('#get XYZ', function () {
-        expect(vectorA.X).toEqual(1);
-        expect(vectorA.Y).toEqual(2);
-        expect(vectorA.Z).toEqual(3);
     });
 
     it('#add', function () {
