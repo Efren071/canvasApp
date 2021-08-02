@@ -1,5 +1,5 @@
-import { Matrix3D } from '../../../src/maths/Matrix3D';
-import { Vector3D } from '../../../src/maths/Vector3D';
+import { Matrix3D } from '../../../src/engine/maths/Matrix3D';
+import { Vector3D } from '../../../src/engine/maths/Vector3D';
 
 describe('Matrix3D', function () {
     let matrixA: Matrix3D;

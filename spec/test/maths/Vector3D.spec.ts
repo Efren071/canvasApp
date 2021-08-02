@@ -1,4 +1,4 @@
-import { Vector3D } from '../../../src/maths/Vector3D';
+import { Vector3D } from '../../../src/engine/maths/Vector3D';
 
 describe('Vector2D', function () {
     let vectorA: Vector3D;
