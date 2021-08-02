@@ -4,6 +4,9 @@ module.exports = {
     devtool: 'eval-source-map',
     mode: 'development',
     entry: './src/index.ts',
+    devServer: {
+        contentBase: './dist',
+    },
     module: {
         rules: [
             {
