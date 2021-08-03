@@ -6,17 +6,20 @@
   "scripts": {
     "test": "ts-node node_modules/jasmine/bin/jasmine --config=spec/jasmine.json",
     "build": "webpack",
-    "start:dev": "webpack serve"
+    "start:dev": "webpack serve --progress --inline --hot",
+    "watch": "webpack --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/jasmine": "^3.8.2",
+    "css-loader": "^6.2.0",
     "jasmine": "^3.8.0",
     "jasmine-spec-reporter": "^7.0.0",
     "jasmine-ts": "^0.4.0",
     "jasmine-ts-console-reporter": "^3.1.1",
+    "style-loader": "^3.2.1",
     "ts-loader": "^9.2.4",
     "ts-node": "^10.1.0",
     "typescript": "^4.3.5",

@@ -6,9 +6,17 @@ module.exports = {
     entry: './src/index.ts',
     devServer: {
         contentBase: './dist',
+        stats: {
+            children: false, // Hide children information
+        }
     },
     module: {
         rules: [
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+                include: [path.resolve(__dirname), 'css'],
+            },
             {
                 test: /\.ts$/,
                 use: 'ts-loader',
